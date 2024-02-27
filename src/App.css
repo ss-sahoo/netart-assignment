@@ -1,38 +1,153 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 249, 178, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  font-family: "Inter", sans-serif;
+}
+.logo-img {
+  display: flex;
+  justify-content: center;
+}
+.logo-img > img {
+  height: 11.25rem;
+}
+.top-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 0 1rem;
+}
+.top-container-left > img {
+  aspect-ratio: 0.4995;
+  width: 100%;
+}
+.top-container-right {
+  color: #404952;
+}
+.right-image {
+  width: 100%;
+  margin: 1rem 0;
+  aspect-ratio: 1.7897;
+}
+.top-container-right > ul {
+  margin-left: 1.5rem;
+}
+.container > .description {
+  margin-top: 2rem;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tool-image {
+  margin: 1rem 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
+}
+.tool-image > img {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.bottom-text {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 0.5rem 0rem;
+  margin-top: 1.39rem;
+  max-width: 86.53456rem;
 }
 
-.App-link {
-  color: #61dafb;
+.bottom-text span {
+  color: black;
+  margin: 0 2px;
+  font-size: 0.675rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.bottom-text span:nth-child(even) {
+  color: red;
+}
+.footer {
+  margin-top: 0.5rem;
+  background-color: #ec3237;
+  height: 7.43469rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer-col {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer-col > svg {
+  width: 1rem;
+  fill: #fff;
+}
+.footer-col > p {
+  color: #fff;
+  font-size: 0.875rem;
+}
+.footer-col > p > span {
+  font-weight: 700;
+}
+.h3-text {
+  font-size: 1rem;
+  font-weight: 700;
+}
+@media (max-width: 425px) {
+  .logo-img > img {
+    height: 4.35438rem;
   }
-  to {
-    transform: rotate(360deg);
+  .right-image {
+    margin: 1rem 0 0.76rem 0;
+  }
+  .top-container-right {
+    font-size: 0.675rem;
+  }
+  .top-container-left > img {
+    width: 6.27213rem;
+  }
+  .h3-text {
+    font-size: 0.675rem;
+  }
+  .top-container {
+    gap: 1rem;
+  }
+  .top-container-right > ul {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+  .container > .description {
+    font-size: 0.675rem;
+    font-weight: 400;
+    padding: 0 1rem;
+  }
+  .tool-image {
+    margin: 1rem;
+  }
+  .tool-image > p {
+    font-size: 0.625rem;
+    text-align: center;
+  }
+  .container > h5 {
+    font-size: 0.6875rem;
+  }
+  .bottom-text span {
+    font-size: 0.6275rem;
+  }
+  .footer {
+    height: 2.31538rem;
+  }
+  .footer-col > p {
+    font-size: 0.4275rem;
+  }
+  .footer-col > svg {
+    width: 0.5rem;
   }
 }
